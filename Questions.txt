@@ -1,0 +1,45 @@
+
+# Blanket Answer:
+    # 1: d, h, g, e
+    # 2: No, i is not independent of k, because K has a path to a have a path to i. J is irrelevant?
+    # 3: 
+
+# Blanket questions:
+    # what does it mean when i and j in a network is independent? 
+      # Isn't a node A dependent on all nodes that has a path to A?
+    
+# Hidden Markov questions:
+    # What is X and Y? X = Internal state, happy/sad. Y = observasion, wathcing, crying...
+    # What does "the probability of X0" / p(X0) mean? Initial state, 
+    # What is theta: p(Xt|Xt-1) / transition matrix how to calculate it? 
+    # What is phi:  p(Yt|Xt) / observation matrix
+
+
+
+    ## Questions: ##
+      
+      ## About Structure:
+        # Is the array of internal state an array of probailities of being happy or a bool array? {h, s}
+        # Is probState supposed to be a vector of {chance of happy, chance of sad} or just a number? veector.
+      
+      ## About Algorithm:
+        # How do I calulate / pick observation probability(P(Yt|Xt)) (in the simplified expression) for an activity wihtout knowing the internal state?
+        # Where does transition table come into the picture?
+        # I think inbetween every action, the transition table should be used somehow.
+        # After the transition table, I think the observation table will be used somehow. Drawing.
+        # The starting state for X is the inital probability of being happy, what is the corresponding action for that X value?
+
+      ## General:
+        # Was there an exercise with a similar implimentation? Ex5 only had PCA and Neural Networks.
+        # NO HISTORY!
+
+
+
+
+    ## New Questions: ##
+        # - What is quesiton 3 asking?
+        # - The input and output state is set of probabilites {h, s}, then how can question 3 define that we are happy in a timestep as a boolean.
+        #   Should I treat this boolean representation as {1, 0}?
+        # - mat.dot() or broadcast?? Shape problems. 2x2 * 2x1 = 2x2, Why?
+         
+
